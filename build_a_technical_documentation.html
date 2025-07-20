@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Functions" class="nav-link">Functions</a>
+    <a href="#Loops" class="nav-link">Loops</a>
+    <a href="#Arrays" class="nav-link">Arrays</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile language used for web development.</p>
+      <p>It runs in the browser and allows for dynamic content.</p>
+      <p>It was originally created in 10 days!</p>
+      <code>console.log('Hello, world!');</code>
+      <p>JavaScript can also be used on the server side via Node.js.</p>
+      <ul>
+        <li>Dynamic content</li>
+        <li>Event handling</li>
+        <li>Browser API access</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>You can declare variables using var, let, or const.</p>
+      <p>`let` is block scoped and preferred for mutable values.</p>
+      <p>`const` is used for values that don’t change.</p>
+      <code>let x = 10;</code>
+      <code>const pi = 3.14;</code>
+      <ul>
+        <li>let is block scoped</li>
+        <li>const cannot be reassigned</li>
+        <li>var is function scoped</li>
+      </ul>
+      <p>Always try to use const when possible.</p>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of code designed to perform tasks.</p>
+      <p>They can accept inputs (parameters) and return outputs.</p>
+      <code>function greet(name) { return "Hello " + name; }</code>
+      <p>Functions can be anonymous or named.</p>
+      <p>Arrow functions are a modern syntax.</p>
+      <code>const add = (a, b) => a + b;</code>
+      <ul>
+        <li>Reusable code</li>
+        <li>Encapsulation</li>
+        <li>Modularity</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops are used to repeat code.</p>
+      <p>JavaScript supports for, while, and do-while loops.</p>
+      <code>for(let i = 0; i < 5; i++) { console.log(i); }</code>
+      <p>Always ensure loops terminate to avoid infinite loops.</p>
+      <p>Use `break` to exit a loop early.</p>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do-while loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>Arrays are ordered collections of values.</p>
+      <p>You can access elements using indexes starting at 0.</p>
+      <p>JavaScript provides many array methods.</p>
+      <code>let fruits = ['apple', 'banana'];</code>
+      <code>fruits.push('orange');</code>
+      <ul>
+        <li>push()</li>
+        <li>pop()</li>
+        <li>map()</li>
+      </ul>
+      <p>Arrays can contain any data type including other arrays.</p>
+    </section>
+  </main>
+</body>
+</html>
